@@ -18,7 +18,7 @@ private:
 
     // Global shared state
     static std::mutex mutex_;
-    static std::vector<uint64_t> latency_data_;
+    static std::vector<uint64_t> latency_buffer_;  // consumed by external service
 };
 
 }  // namespace common
